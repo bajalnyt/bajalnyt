@@ -17,7 +17,7 @@ jobs:
 
           # Options
           user: bajalnyt
-          template: classic
+          template: terminal
           config_gemoji: yes # use additional non-unicode emoji
           config_timezone: America/New_York
           retries: 3
@@ -68,11 +68,18 @@ jobs:
           plugin_lines: yes
 
           # The repositories traffic plugin displays the number of page views across your repositories.
-          plugin_traffic: yes
+          #plugin_traffic: yes
 
           # The stargazers plugin displays your stargazers evolution across all of your repositories over the last two weeks.
-          plugin_stargazers: yes
+          #plugin_stargazers: yes
 
           plugin_notable: yes
           plugin_notable_filter: stars:>50 # Only display repositories with 50 stars or more (syntax based on GitHub search query)
           plugin_notable_repositories: no     # Display repositories name instead of only organization name
+
+          plugin_stackoverflow: yes
+          plugin_stackoverflow_user: 1092133                           # Stackoverflow user id (required)
+          plugin_stackoverflow_sections: answers-top, questions-recent # Display top answers and recent questions
+          plugin_stackoverflow_limit: 2                                # Display 2 entries per section
+          plugin_stackoverflow_lines: 4                                # Display 4 lines per entry
+          plugin_stackoverflow_lines_snippet: 2                        # Display 2 lines in embed code snippets
