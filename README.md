@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+![bajal’s Github Metrics](https://github.com/bajalnyt/bajalnyt/blob/main/github-metrics.svg)
+
 <!--
 **bajalnyt/bajalnyt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
