@@ -2,7 +2,7 @@
 name: Metrics
 on:
   # Schedule updates (00:30 && 12:30 UTC daily)
-  schedule: [{ cron: "30 0,12 * * *" }]
+  schedule: [{ cron: "0 12 * * *" }]
   # Lines below let you run workflow manually and on each commit
   workflow_dispatch:
   push: { branches: ["main"] }
@@ -17,7 +17,7 @@ jobs:
 
           # Options
           user: bajalnyt
-          template: terminal
+          template: classic
           config_gemoji: yes # use additional non-unicode emoji
           config_timezone: America/New_York
           retries: 3
